@@ -34,7 +34,6 @@ body {
   border-radius: 0.25rem;
   padding: 1rem 4rem 2rem 4rem;
   margin-top: 2rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +90,6 @@ body {
 
 .compact-picker {
   margin-bottom: 0rem !important;
-
 }
 
 .panelInput {
@@ -110,5 +108,29 @@ body {
 .panelInput:focus {
   outline: none !important;
   border-color: #9E2D5B;
+}
 
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  #editor {
+    padding: 1rem;
+  }
+
+  .panelInput {
+    height: 3rem;
+
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: clamp(6px, 3vw, 0.8rem);
+  }
+
+  .picker-container {
+    margin: 1rem;
+  }
 }
